@@ -1,0 +1,252 @@
+*{
+    box-sizing: border-box;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+:root {
+    /*color */
+    --white-color:#f9f9f9;
+    --black-color:#000000;
+    --blue-color:#29b6f6;
+    --red-color:#ff0000;
+    --gray-dark-color:#252525;
+    --gray-light-color:#b2bfd2;
+    /*size */
+    --padding: 12px;
+    --img-size: 36px;
+    /*font-size */
+    --font-large: 18px;
+    --font-medium: 14px;
+    --font-small: 12px;
+    --font-mirco: 10px;
+}
+
+body{
+    font-family: 'Fjalla One', sans-serif;
+}
+a{
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+button,
+button:focus{
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background: none;
+}
+
+header{
+    display: flex;
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    padding: var(--padding);
+    font-size: var(--font-large);
+    background-color: var(--gray-dark-color);
+    color: var(--white-color);
+}
+header  .logo{
+    font-size:var(--font-large);
+}
+
+header  .logo i{
+    color: var(--red-color);
+}
+
+header  .icons  .fa-search{
+    margin-right: var(--padding);
+}
+
+/*video palyer */
+
+.kv .cont{
+   display: none;
+}
+
+.Player{
+    text-align: center;
+    background-color: var(--black-color);
+}
+
+.Player video{
+    width: 100%;
+    height: 100%;
+    max-width: 720px;
+}
+
+
+
+/*infomation */
+body > .info{
+    padding: var(--padding);
+}
+
+.Info   .hashtags{
+    display: flex;
+    font-size: var(--font-small);
+    color:var(--blue-color);
+}
+
+.Info   .hashtags li{
+    padding:var(--padding);
+}
+.Info   .titleAndButton {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.Info   .titleAndButton .Info-title{
+    font-size: var(--font-medium);
+    padding: var(--padding);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    margin-right: var(--padding);
+}
+
+.Info   .titleAndButton i{
+    height: 100%;
+}
+/* action and button */
+.moreBtn{
+    display: flex;
+    justify-content: space-around;
+    margin: var(--padding) 0;
+}
+.moreBtn button{
+    display: flex;
+    flex-direction: column;
+    font-size: var(--font-small);
+    color: var(--gray-dark-color);
+}
+
+.moreBtn button i {
+    margin: 0 auto;
+    margin-bottom: var(--padding);
+    font-size: 16px;
+}
+
+.moreBtn button i.active{
+    color: var(--blue-color);
+}
+
+.Info   .views{
+    font-size: var(--font-small);
+    color: var(--gray-light-color);
+}
+
+.subsrciber {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--gray-light-color);
+    border-bottom: 1px solid var(--gray-light-color);
+}
+
+.subsrciber .metadata{
+    display: flex;
+    align-items: center;
+}
+
+.subsrciber .metadata   .info{
+    display: flex;
+    flex-direction: column;
+}
+
+.subsrciber .metadata img{
+    width: var(--img-size);
+    height: var(--img-size);
+    border-radius: 50%;
+}
+.subsrciber .metadata   .subscribe{
+    font-size: var(--font-small);
+    color: var(--gray-light-color);
+}
+.subsrciber .subsrcibebtn{
+    font-size: var(--font-medium);
+    text-transform: uppercase;
+    color: var(--red-color);
+}
+
+.Upnext {
+    padding: 0 var(--padding);
+}
+
+.Upnext > .title{
+    font-size: var(--font-medium);
+    color: var(--blue-color);
+    margin-bottom: calc(var(--padding) / 2);
+}
+
+.Upnext .item{
+    display: flex;
+    margin-top: var(--padding);
+}
+
+.Upnext .item   .img{
+    flex: 1 1 35%;
+}
+.Upnext .item img{
+    width: 100%;
+    width: calc(var(--img-size)*5);
+    height: calc(var(--img-size)*4);
+    margin-right: var(--padding);
+    cursor: pointer;
+}
+
+.Upnext .item   .info{
+    flex: 1 1 65%;
+
+}
+.Upnext .item   .morebtn{
+    flex: 1 1 5%;
+
+}
+
+.Upnext .info{
+    display: flex;
+    flex-direction: column;
+}
+
+.Upnext .info   .title{
+    font-size: var(--font-medium);
+    color: var(--black-color);
+}
+
+.Upnext .info   .name{
+    font-size: var(--font-small);
+    color: var(--gray-light-color);
+}
+
+.Upnext .info   .views{
+    font-size: var(--font-mirco);
+    color: var(--gray-light-color);
+}
+
+.InfoAndUpnext {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+.InfoAndUpnext{
+    flex-direction: row;
+    margin: var(--padding) 0;
+}
+.kv .cont{
+    display: block;
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    right: auto;
+    bottom: auto;
+    font-size: 22px;
+    line-height: 48px;
+    color: #fff;
+    text-shadow: 0 1px 1px #000;
+}
+}
