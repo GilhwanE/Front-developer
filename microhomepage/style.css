@@ -45,7 +45,7 @@ ul{
     justify-content: space-between;
     height: 60px;
     padding: 20px 0;
-    font-size: 16px;
+    font-size: 13px;
 }
 
 .main-nav   .main-logo{
@@ -260,6 +260,9 @@ ul{
 
 @media(max-width: 700px){
 
+    .menu-btn{
+        display: block;
+    }
     .menu-btn:hover{
         opacity: 0.5;
     }
@@ -280,7 +283,6 @@ ul{
         padding: 30px;
         transform:translateX(-500px);
         transition: transform 0.5s ease-in-out;
-
     }
     .main-nav ul.main-menu li{
         padding: 10px;
@@ -290,7 +292,6 @@ ul{
     .main-nav ul.main-menu.show{
         transform: translateX(-20px);
     }
-    
     .homecard{
         grid-template-columns: repeat(2, 1fr);
 
@@ -307,10 +308,11 @@ ul{
     }
     .links  .links-inner{
         grid-template-columns: repeat(2, 1fr);
-    }
+    }   
 }
 
 @media(max-width: 500px){
+
     .homecard{
         grid-template-columns: 1fr;
     }
@@ -327,12 +329,6 @@ ul{
         align-items: center;    
         font-size: 10px;
         padding: 0 10px;
-    }
-    .main-logo{
-    }
-
-    .main-nav   .main-menu{
-        display: none;    
     }
 }
 
