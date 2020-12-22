@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'DM Sans', sans-serif;
+}
+
+button{
+    border-style:none;
+    border:none;
+}
+
+.Landing{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    padding: 60px;
+    background-color: #FDDED8;
+    
+}
+
+
+.Landing    .title{
+    font-size:40px;
+    line-height: 1;
+    letter-spacing: -0.05em;
+    color: #2B292D;
+    margin-bottom: 24px;
+}
+
+.Landing    .desc{
+    font-size: 16px;
+    margin-bottom: 24px;
+    color: #2B292D;
+    ;
+}
+
+.Landing button{
+    display: inline;
+    color: #FFFFFF;
+    background-color: #3040C4;
+    font-size: 16px;
+    border-radius: 4px;
+    padding: 12px 35px;
+    cursor: pointer;
+}
+
+.Landing button:last-child{
+    color: #3040C4;
+    background-color: #FFFFFF;
+}
+
+/* Testimonials */
+
+.Testimonials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 15px;
+}
+
+.Testimonials   .title_one{
+    font-size: 22px;
+    margin-bottom: 16px;
+}
+
+.Testimonials   .title_two{
+    font-size: 22px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+
+.Testimonials   .desc_one,
+.desc_two{
+    font-size: 16px;
+    color: gray;
+}
+
+/*Program */
+.Program{
+    display: block;
+    padding: 80px 15px;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.Program    .Category{
+    color: #009B4D;
+    font-size: 16px;
+}
+
+.Program    .title{
+    font-size: 34px;
+    color: #2B292D;
+    margin-bottom: 32px;
+}
+.Program    .desc{
+    font-size: 16px;
+    color: #2B292D;
+    line-height: 1.5;
+    margin-bottom: 32px;
+}
+
+.Programs {
+    display: block;
+    text-align: center;
+    padding: 24px 0 32px;
+    background-color: white;
+    transition: background-color 500ms ease-in-out;
+}
+
+.Program    .Programs   .Program_card img{
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    height: 200px;
+    margin: 0 auto 16px;
+    
+}
+
+.Program    .Programs   .Program_card:hover{
+    background-image:;
+}
+
+.Program    .Programs   .Program_card strong{
+    font-size: 16px;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
+    color: blue;
+}
+
+
+.Program    .Programs   .Program_card:hover strong{
+    color: black;
+}
+
+
+

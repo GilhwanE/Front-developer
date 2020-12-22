@@ -1,0 +1,33 @@
+기본적인 문법구조
+selecter : 선택자 (누구를 꾸밀지 선택)
+property속성
+
+1.<link rel ="stylesheet" href="./css">      ....css파일을 링크로 불러오는방법
+
+2.<style>   ...head태그안에 스타일테그를 선언한뒤 스타일적용
+/*css */
+p{
+color:blue}
+
+3.<p style="font-size : 32px; /p>  ...아주 잘못된 경우임 문단속성에 직접때려넣는것
+
+Selector에 대해서
+Type Selector 직접적으로 지칭 ex. p , div
+.== class 스페이스바로 class 구분해야할것
+클래서 선택하기 위한 방법
+-
+.box-0.box-1 (2개 클래스)
+.box-1.box-2
+
+id=김버그
+#김버그
+김버그에 해당하는 부분 스타일처리
+
+#kimbug.box ==class=box id=kimbug
+
+자식선택자 parent>child
+ 자손선택자  parent + Descendants 
+ 형제선택자(계층동일) .active ~ li (클래스 다음 요소들)
+	.active + li (클래스 active다음 한가지 요소만 적용)
+
+
