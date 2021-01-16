@@ -121,3 +121,10 @@ img{
     padding: 0.8rem 1.3rem;
     text-transform: uppercase;
 }
+
+/* Mobile */
+@media screen and (max-width:568px){
+    .showcase-content{
+        display: none;
+    }
+}
